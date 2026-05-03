@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Easy Chords",
+  "version": "1.0.1",
+  "description": "תוסף המאפשר להציג אוטומתית את האקורדים בגרסא קלה, לשנות טונים, גודל פונט והדפסת האקורדים באתר negina.co.il",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://negina.co.il/chords/*"
+      ],
+      "js": [
+        "script.js"
+      ],
+      "css": [
+        "style.css"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}
